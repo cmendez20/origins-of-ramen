@@ -1,0 +1,62 @@
+@media only screen and (max-width: 520px) {
+  .one h1 {
+    z-index: 3;
+    color: #fff;
+    width: 200px;
+    font-size: 1.7em;
+    text-align: center;
+  }
+  
+  .circle {
+    // background:#BC002D;
+    border-radius: 50%;
+    width: 275px;
+    height: 275px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  h1 {
+    font-size: 1em;
+    width: 200px;
+  }
+
+  .slide-two-svg {
+    width: 260px;
+    height: 210px;
+  }
+
+}
+
+@media only screen and (min-width: 521px) {
+  h1 {
+    font-size: 1.4em;
+    width: 400px;
+  }
+
+  .slide-two-svg {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  h1 {
+    color: #BC002D;
+    width: 750px;
+    font-size: 2.2em;
+    text-align: left;
+  }
+
+  .slide-two-svg {
+    width: 55vw;
+    height: 55vh;
+  }
+}
+
+// @media only screen and (max-width: 1030px) {
+//   h1 {
+//     font-size: 1.7em;
+//     width: 500px;
+//   }
+// }

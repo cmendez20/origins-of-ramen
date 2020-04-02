@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #BC002D;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 600vw;
+  /* need to make sure that the value of width is equal to total width of the content divs */
+  
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+.one {
+  background: #fff;
+  z-index: 10;
+}
+
+.one h1 {
+  z-index: 3;
+  color: #fff;
+  width: 450px;
+  font-size: 2.2em;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #BC002D;
+  width: 750px;
+  font-size: 2.2em;
+  text-align: left;
+}
+
+.circle {
+  background: #BC002D;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  z-index: 1;
+}
+
+.two {
+  // background: #fff;
+}
+
+.slide-two-svg {
+  width: 55vw;
+  height: 55vh;
+}
+
+.dash-1 {
+  // animation: fade-in 8s infinite;
+  animation: scale 6s infinite;
+}
+.dash-2 {
+  // animation: fade-in 6s infinite;
+  // animation-delay: 8s infinite;
+  animation: scale 6s infinite;
+}
+.dash-3 {
+  // animation: fade-in 4s infinite;
+  // animation-delay: 14s infinite;
+  animation: scale 6s infinite;
+}
+.dash-4 {
+  // animation: fade-in 2s infinite;
+  // animation-delay: 16s infinite;
+  animation: scale 6s infinite;
+}
+.dash-5 {
+  // animation: fade-in 2s infinite;
+  // animation-delay: 16s infinite;
+  animation: scale 6s infinite;
+}
+
+.cls-7 {
+  // animation: fade-in 2s infinite;
+  // animation-delay: 16s infinite;
+  animation: scale 6s infinite;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: translateX(-15px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.three {
+  // background: yellow;
+}
+
+.four {
+
+}
+
+.final {
+  background: #BC002D;
+}
+.final h1, h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+
+  /* hiding the scrollbar */
+  /* for firefox */
+  scrollbar-width: none;
+  /* Internet Explorer Family */
+  -ms-overflow-style: none;
+}
+
+/* for chrome & safari */
+::-webkit-scrollbar {
+  display: none;
+}
+
+// center stuff to page
+.center-stuff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+// SVG Styling
+// .japan-island-svg {
+//   fill: white;
+//   color: white;
+// }
