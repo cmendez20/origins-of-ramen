@@ -1,3 +1,5 @@
+$jpn-red: #BC002D;
+
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +23,18 @@ body {
   
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
+}
+
+.page-num {
+  text-align: center;
+  color: 	#C0C0C0;
+  position: fixed;
+  bottom: 35px;
+}
+
+.main-page-num {
+  color: $jpn-red;
+  font-size: 1.5em;
 }
 
 .one {
@@ -63,33 +77,39 @@ h1, h2 {
 
 .dash-1 {
   // animation: fade-in 8s infinite;
-  animation: scale 6s infinite;
+  animation: scale 4s infinite;
+  animation-direction: alternate;
 }
 .dash-2 {
   // animation: fade-in 6s infinite;
   // animation-delay: 8s infinite;
-  animation: scale 6s infinite;
+  animation: scale 4s infinite;
+  animation-direction: alternate;
 }
 .dash-3 {
   // animation: fade-in 4s infinite;
   // animation-delay: 14s infinite;
-  animation: scale 6s infinite;
+  animation: scale 4s infinite;
+  animation-direction: alternate;
 }
 .dash-4 {
   // animation: fade-in 2s infinite;
   // animation-delay: 16s infinite;
-  animation: scale 6s infinite;
+  animation: scale 4s infinite;
+  animation-direction: alternate;
 }
 .dash-5 {
   // animation: fade-in 2s infinite;
   // animation-delay: 16s infinite;
-  animation: scale 6s infinite;
+  animation: scale 4s infinite;
+  animation-direction: alternate;
 }
 
 .cls-7 {
   // animation: fade-in 2s infinite;
   // animation-delay: 16s infinite;
-  animation: scale 6s infinite;
+  animation: scale 4s infinite;
+  animation-direction: alternate;
 }
 
 @keyframes fade-in {
@@ -115,10 +135,19 @@ h1, h2 {
 
 .three {
   // background: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
 }
 
 .four {
 
+}
+
+.align-title {
+  text-align: center;
 }
 
 .final {
@@ -163,3 +192,5 @@ h1, h2 {
 //   fill: white;
 //   color: white;
 // }
+
+// Progress Bar

@@ -3,36 +3,84 @@
 {% block page_title %}New index page title{% endblock %}
 
 {% block content %}
+
 <div class="outer-wrapper">
   <div class="wrapper">
+
     <div class="slide one center-stuff">
       {% include "_partials/slide-one.njk" %}
     </div>
+
     <div class="slide two center-stuff">
       {% include "_partials/slide-two.njk" %}
       {% include "_partials/_partials-svg/slide-two-svg.njk" %}
+      <h1 class="page-num"><span class="main-page-num">1</span> / 12</h1>
     </div>
     
-    <div class="slide four center-stuff">{% include "_partials/slide-four.njk" %}</div>
-    <div class="slide five center-stuff">{% include "_partials/slide-five.njk" %}</div>
-    <div class="slide six center-stuff">{% include "_partials/slide-six.njk" %}</div>
-    <div class="slide seven center-stuff">{% include "_partials/slide-seven.njk" %}</div>
-    <div class="slide eight center-stuff">{% include "_partials/slide-eight.njk" %}</div>
-    <div class="slide nine center-stuff">{% include "_partials/slide-nine.njk" %}</div>
-    <div class="slide ten center-stuff">{% include "_partials/slide-ten.njk" %}</div>
-    <div class="slide eleven center-stuff">{% include "_partials/slide-eleven.njk" %}</div>
-    <div class="slide twelve center-stuff">{% include "_partials/slide-twelve.njk" %}</div>
-    <div class="slide thirteen center-stuff">{% include "_partials/slide-thirteen.njk" %}</div>
-    <div class="slide fourteen center-stuff">{% include "_partials/slide-fourteen.njk" %}</div>
+    <div class="slide four center-stuff">
+      {% include "_partials/slide-four.njk" %}
+      <h1 class="page-num"><span class="main-page-num">2</span> / 12</h1>
+    </div>
+
+    <div class="slide five center-stuff">
+      {% include "_partials/slide-five.njk" %}
+      <h1 class="page-num"><span class="main-page-num">3</span> / 12</h1>
+    </div>
+
+    <div class="slide six center-stuff">
+      {% include "_partials/slide-six.njk" %}
+      <h1 class="page-num"><span class="main-page-num">4</span> / 12</h1>
+    </div>
+
+    <div class="slide seven center-stuff">
+      {% include "_partials/slide-seven.njk" %}
+      <h1 class="page-num"><span class="main-page-num">5</span> / 12</h1>
+    </div>
+
+    <div class="slide eight center-stuff">
+      {% include "_partials/slide-eight.njk" %}
+      <h1 class="page-num"><span class="main-page-num">6</span> / 12</h1>
+    </div>
+
+    <div class="slide nine center-stuff">
+      {% include "_partials/slide-nine.njk" %}
+      <h1 class="page-num"><span class="main-page-num">7</span> / 12</h1>
+    </div>
+
+    <div class="slide ten center-stuff">
+      {% include "_partials/slide-ten.njk" %}
+      <h1 class="page-num"><span class="main-page-num">8</span> / 12</h1>
+    </div>
+
+    <div class="slide eleven center-stuff">
+      {% include "_partials/slide-eleven.njk" %}
+      <h1 class="page-num"><span class="main-page-num">9</span> / 12</h1>
+    </div>
+
+    <div class="slide twelve center-stuff">
+      {% include "_partials/slide-twelve.njk" %}
+      <h1 class="page-num"><span class="main-page-num">10</span> / 12</h1>
+    </div>
+
+    <div class="slide thirteen center-stuff">
+      {% include "_partials/slide-thirteen.njk" %}
+      <h1 class="page-num"><span class="main-page-num">11</span> / 12</h1>
+    </div>
+
+    <div class="slide fourteen center-stuff">
+      {% include "_partials/slide-fourteen.njk" %}
+      <h1 class="page-num"><span class="main-page-num">12</span> / 12</h1>
+    </div>
     
-    <div class="slide three center-stuff">
-      <h1>The Different Types of Ramen</h1>
-      {% include "_partials/_partials-svg/japan-svg.njk" %}
+    <div class="slide three">
+      <h1 class="align-title">The Different Types of Ramen</h1>
+      {% include "_partials/_partials-svg/japan-svg-2.njk" %}
     </div>
     <div class="slide final center-stuff">{% include "_partials/slide-final.njk" %}</div>
   </div>
 </div>
-  
+ 
+
 
   <script src="js/jquery.js"></script>
   <script src="js/popper.js"></script>
