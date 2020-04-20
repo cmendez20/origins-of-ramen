@@ -26,6 +26,24 @@
     height: 210px;
   }
 
+  .show-mobile {
+    display: flex;
+    font-size: 1.3em;
+  }
+
+  .show-mobile img {
+    height: 44px;
+    width: 44px;
+  }
+
+  .show-mobile p {
+    margin: 0;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
 }
 
 @media only screen and (min-width: 521px) {
@@ -37,6 +55,13 @@
   .slide-two-svg {
     width: 250px;
     height: 200px;
+  }
+
+  .show-mobile {
+    display: none;
+  }
+  .hide-mobile {
+    display: flex;
   }
 }
 
@@ -53,6 +78,8 @@
     height: 55vh;
   }
 }
+
+
 
 // @media only screen and (max-width: 1030px) {
 //   h1 {
