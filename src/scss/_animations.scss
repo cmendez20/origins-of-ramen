@@ -1,17 +1,20 @@
-.japan-island-svg {
-  transform-origin: center center;
-}
+// .japan-island-svg {
+//   transform-origin: center center;
+// }
 
-.circle-city {
-  // box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-	transform: scale(1);
-  animation: pulse 1.5s infinite;
-  animation-direction: alternate;
-  transform-origin: center center;
-}
+// .circle-city {
+//   // box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+// 	transform: scale(1);
+//   animation: pulse 1.5s infinite;
+//   animation-direction: alternate;
+//   transform-origin: center center;
+// }
 
-.circle-city:hover {
-  animation-play-state: paused;
+ circle:hover {
+  // animation-play-state: paused;
+  // transform: scale(1.1);
+  // transform-origin: center center;
+  r: 15;
 }
 
 @keyframes pulse {
@@ -47,8 +50,4 @@
   }
 }
 
-svg g:hover {
-  // transform: scale(1.2);
-  fill: blue;
-  transition: all 0.3s ease 0s;
-}
+
