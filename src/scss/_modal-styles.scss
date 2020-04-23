@@ -6,6 +6,7 @@ button {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   color: #fff;
   padding: 10px 25px;
+  margin-top: 15px;
 }
 
 .modal-container-original {
@@ -42,11 +43,12 @@ button {
 
 .modal-original h1 {
   color: #333;
-  // text-align: center;
+  width: 400px;
 }
 
 .modal-original p {
   opacity: 0.7;
+  text-align: left;
 }
 
 // modal styling for Tokyo
@@ -90,6 +92,7 @@ button {
 
 .modal-tokyo p {
   opacity: 0.7;
+  text-align: left;
 }
 
 // modal styling for Kitakata
@@ -133,6 +136,7 @@ button {
 
 .modal-kitakata p {
   opacity: 0.7;
+  text-align: left;
 }
 
 // modal styling for Hakata
@@ -176,4 +180,5 @@ button {
 
 .modal-hakata p {
   opacity: 0.7;
+  text-align: left;
 }

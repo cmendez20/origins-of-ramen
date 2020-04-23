@@ -21,7 +21,7 @@
     width: 200px;
   }
 
-  .slide-two-svg {
+  .slide-02-svg {
     width: 260px;
     height: 210px;
   }
@@ -44,6 +44,35 @@
     display: none;
   }
 
+  .theory-title {
+    font-size: 1.9em;
+    width: 290px;
+  }
+
+  .three svg {
+    width: 280px;
+  }
+  .modal-original img {
+    width: 225px; 
+    height: 150px;
+  }
+
+  .modal-kitakata img {
+    width: 225px; 
+    height: 150px;
+  }
+  .modal-tokyo img {
+    width: 225px; 
+    height: 150px;
+  }
+  .modal-hakata img {
+    width: 225px; 
+    height: 150px;
+  }
+  .five svg {
+    // width: 175px;
+    height: 225px;
+  }
 }
 
 @media only screen and (min-width: 521px) {
@@ -58,10 +87,38 @@
   }
 
   .show-mobile {
-    display: none;
+    display: flex;
   }
   .hide-mobile {
-    display: flex;
+    display: none;
+  }
+  .theory-title {
+    font-size: 3.8em;
+    width: 500px;
+  }
+
+  .three svg {
+    width: 500px;
+  }
+  .modal-original img {
+    width: 320px; 
+    height: 213px;
+  }
+  .modal-kitakata img {
+    width: 320px; 
+    height: 213px;
+  }
+  .modal-tokyo img {
+    width: 320px; 
+    height: 213px;
+  }
+  .modal-hakata img {
+    width: 320px; 
+    height: 213px;
+  }
+  .five svg {
+    // width: 500px;
+    height: 450px;
   }
 }
 
@@ -73,9 +130,23 @@
     text-align: left;
   }
 
-  .slide-two-svg {
-    width: 55vw;
-    height: 55vh;
+  .two svg {
+    width: 100%;
+  }
+
+  .theory-title {
+    font-size: 5.8em;
+    width: 900px;
+  }
+
+  .three svg {
+    width: 900px;
+  }
+  .show-mobile {
+    display: none;
+  }
+  .hide-mobile {
+    display: flex;
   }
 }
 

@@ -17,6 +17,13 @@
   r: 15;
 }
 
+g#sapporo-title:hover {
+  // color: blue;
+  fill: blue;
+  border-bottom: 3px solid red;
+  // transform: scale(1.1);
+}
+
 @keyframes pulse {
 	0% {
     transform: scale(0.95);
