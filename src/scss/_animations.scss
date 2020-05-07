@@ -10,12 +10,10 @@
 //   transform-origin: center center;
 // }
 
- circle:hover {
-  // animation-play-state: paused;
-  // transform: scale(1.1);
-  // transform-origin: center center;
-  r: 15;
-}
+//  circle:hover {
+
+//   r: 15;
+// }
 
 g#sapporo-title:hover {
   // color: blue;
@@ -57,4 +55,238 @@ g#sapporo-title:hover {
   }
 }
 
+#slide-05-svg {
+  @include svg-size-desktop;
+  animation: moveUp ease-in-out 2.5s infinite alternate;
+}
 
+#slide-06-svg {
+  @include svg-size-desktop;
+}
+
+#steam-left {
+  animation: fadeSteam ease-in-out 1.5s infinite alternate,
+              moveUp linear 2.5s infinite alternate;
+  transform-origin: center;
+}
+
+#steam-center {
+  animation: fadeSteam ease-in-out 1.5s infinite alternate-reverse,
+              moveSteamCenter linear 2.5s infinite alternate;
+  transform-origin: center;
+}
+
+#steam-right {
+  animation: fadeSteam ease-in-out 1.5s infinite alternate,
+              moveUp linear 2.5s infinite alternate-reverse;
+  animation-delay: 2s;
+  transform-origin: center;
+}
+
+#fire {
+  animation: moveFire 3s ease-in-out infinite alternate-reverse;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes fadeSteam {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes moveUp {
+  0% {transform: translateY(-20px);}
+  100% {transform: translateY(10px);}
+}
+
+@keyframes moveSteamCenter {
+  0% {transform: translateY(0px);}
+  100% {transform: translateY(70px);}
+}
+
+@keyframes moveFire {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.5);}
+}
+
+#slide-07-svg {
+  @include svg-size-desktop;
+}
+
+#slide-09-svg {
+  width: 175px;
+  height: 175px;
+  margin-top: 6.5rem;
+}
+
+#cross-1 {
+  animation: crissCross 3s linear infinite alternate;
+
+
+
+}
+
+#cross-2 {
+  animation: crissCross 3s linear infinite alternate;
+
+}
+
+.grey-out {
+  fill: $grey;
+}
+
+@keyframes crissCross {
+  0% {transform: scale(0); transform-origin: center center;}
+  50% {transform: scale(.5); transform-origin: center center;}
+  100% {transform: scale(.8); transform: translateY(-10px); transform-origin: center center;}
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+#store {
+  animation: moveUp 2s ease-in-out infinite alternate;
+}
+
+#slide-10-svg {
+  @include svg-size-desktop;
+}
+
+#slide-11-svg {
+  @include svg-size-desktop;
+}
+
+
+.st1{
+	  fill:none;
+    stroke-width:0.75;
+   }
+
+.st2{
+	  fill:none;
+    stroke-width:42;
+   }
+
+[class*="st1"]{
+  stroke: $jpn-red;
+  animation:4s linear building infinite;
+}
+
+[class*="st2"]{
+  stroke: $jpn-red;
+  animation:4s linear building infinite,
+            // 4s linear scaleBuilding infinite;
+}
+
+$stroke-length:110;
+@keyframes building{
+  0%{
+    stroke-dasharray:0 $stroke-length;
+  }
+  70%{
+    stroke-dasharray:$stroke-length 0;
+  }
+  100%{
+    stroke-dasharray:0;
+  }
+}
+
+@keyframes scaleBuilding {
+  0% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+}
+
+#slide-12-svg-2 {
+  @include svg-size-desktop;
+}
+
+#noodles {
+  animation: moveNoodles 3s linear infinite,
+              fadeNoodles 3s ease-out infinite;
+  transform-origin: top;
+  transform-box: fill-box;
+}
+
+#noodle-handle {
+  animation: rotateHandle 2.5s ease-in-out infinite;
+}
+
+@keyframes moveNoodles {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes rotateHandle {
+  0% {
+    transform: rotateX(360deg);
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes fadeNoodles {
+  0% {
+    opacity: 1;
+    // transform-origin: center;
+    transform-box: fill-box;
+  }
+  90% {
+    opacity: 1;
+    // transform-origin: center;
+    transform-box: fill-box;
+  }
+  100% {
+    opacity: 0;
+    // transform-origin: center;
+    transform-box: fill-box;
+  }
+}
+
+#slide-13-svg {
+  @include svg-size-desktop;
+}
+
+#bowl-of-noodles {
+  animation: fadeBowl 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes fadeBowl{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#slide-14-svg {
+  @include svg-size-desktop;
+  animation: scaleText 3s ease infinite alternate;
+}
+
+@keyframes scaleText {
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1.4);
+  }
+}
