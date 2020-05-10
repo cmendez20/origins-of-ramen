@@ -1,41 +1,59 @@
-// .japan-island-svg {
-//   transform-origin: center center;
-// }
-
-// .circle-city {
-//   // box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-// 	transform: scale(1);
-//   animation: pulse 1.5s infinite;
-//   animation-direction: alternate;
-//   transform-origin: center center;
-// }
-
-//  circle:hover {
-
-//   r: 15;
-// }
-
-g#sapporo-title:hover {
-  // color: blue;
-  fill: blue;
-  border-bottom: 3px solid red;
-  // transform: scale(1.1);
+.dash-1 {
+  // animation: fade-in 8s infinite;
+  animation: scale 4s infinite;
+  animation-direction: alternate;
+}
+.dash-2 {
+  // animation: fade-in 6s infinite;
+  // animation-delay: 8s infinite;
+  animation: scale 4s infinite;
+  animation-direction: alternate;
+}
+.dash-3 {
+  // animation: fade-in 4s infinite;
+  // animation-delay: 14s infinite;
+  animation: scale 4s infinite;
+  animation-direction: alternate;
+}
+.dash-4 {
+  // animation: fade-in 2s infinite;
+  // animation-delay: 16s infinite;
+  animation: scale 4s infinite;
+  animation-direction: alternate;
+}
+.dash-5 {
+  // animation: fade-in 2s infinite;
+  // animation-delay: 16s infinite;
+  animation: scale 4s infinite;
+  animation-direction: alternate;
 }
 
-@keyframes pulse {
-	0% {
-    transform: scale(0.95);
+.cls-7 {
+  // animation: fade-in 2s infinite;
+  // animation-delay: 16s infinite;
+  animation: scale 4s infinite;
+  animation-direction: alternate;
+}
 
-    // box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-    transform-origin: center center;
-	}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
-	100% {
-    transform: scale(1.05);
-
-    // box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-    transform-origin: center center;
-	}
+@keyframes scale {
+  0% {
+    transform: translateX(-1.5rem);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 .pulsate {
@@ -43,6 +61,7 @@ g#sapporo-title:hover {
   -webkit-animation-iteration-count: infinite; 
   opacity: 0.5;
 }
+
 @-webkit-keyframes pulsate {
   0% { 
       opacity: 0.5;
@@ -57,6 +76,8 @@ g#sapporo-title:hover {
 
 #slide-05-svg {
   @include svg-size-desktop;
+  // height: 25rem;
+  // width: 25rem;
   animation: moveUp ease-in-out 2.5s infinite alternate;
 }
 
@@ -95,13 +116,13 @@ g#sapporo-title:hover {
 }
 
 @keyframes moveUp {
-  0% {transform: translateY(-20px);}
-  100% {transform: translateY(10px);}
+  0% {transform: translateY(-2rem);}
+  100% {transform: translateY(1rem);}
 }
 
 @keyframes moveSteamCenter {
   0% {transform: translateY(0px);}
-  100% {transform: translateY(70px);}
+  100% {transform: translateY(7rem);}
 }
 
 @keyframes moveFire {
@@ -114,21 +135,17 @@ g#sapporo-title:hover {
 }
 
 #slide-09-svg {
-  width: 175px;
-  height: 175px;
-  margin-top: 6.5rem;
+  width: 17.5rem;
+  height: 17.5rem;
+  margin-top: 5rem;
 }
 
 #cross-1 {
   animation: crissCross 3s linear infinite alternate;
-
-
-
 }
 
 #cross-2 {
   animation: crissCross 3s linear infinite alternate;
-
 }
 
 .grey-out {
