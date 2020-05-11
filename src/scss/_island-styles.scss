@@ -8,11 +8,6 @@
   fill: $var;
 } 
 
-#kitakata-section:hover {
-  fill: #000;
-  cursor: pointer;
-}
-
 #sapporo-name:hover {
   @include hover-color;
 }

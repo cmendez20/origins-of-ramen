@@ -79,10 +79,18 @@
   // height: 25rem;
   // width: 25rem;
   animation: moveUp ease-in-out 2.5s infinite alternate;
+
+  @media only screen and (max-width: 520px) {
+    @include svg-size-mobile;
+  }
 }
 
 #slide-06-svg {
   @include svg-size-desktop;
+
+  @media only screen and (max-width: 520px) {
+    @include svg-size-mobile;
+  }
 }
 
 #steam-left {
@@ -132,12 +140,20 @@
 
 #slide-07-svg {
   @include svg-size-desktop;
+
+  @media only screen and (max-width: 520px) {
+    @include svg-size-mobile;
+  }
 }
 
 #slide-09-svg {
   width: 17.5rem;
   height: 17.5rem;
   margin-top: 5rem;
+
+  @media only screen and (max-width: 520px) {
+    @include svg-size-mobile;
+  }
 }
 
 #cross-1 {
@@ -170,10 +186,18 @@
 
 #slide-10-svg {
   @include svg-size-desktop;
+
+  @media only screen and (max-width: 520px) {
+    @include svg-size-mobile;
+  }
 }
 
 #slide-11-svg {
   @include svg-size-desktop;
+
+  @media only screen and (max-width: 520px) {
+    @include svg-size-mobile;
+  }
 }
 
 
@@ -224,6 +248,10 @@ $stroke-length:110;
 
 #slide-12-svg-2 {
   @include svg-size-desktop;
+
+  @media only screen and (max-width: 520px) {
+    @include svg-size-mobile;
+  }
 }
 
 #noodles {
@@ -279,6 +307,10 @@ $stroke-length:110;
 
 #slide-13-svg {
   @include svg-size-desktop;
+
+  @media only screen and (max-width: 520px) {
+    @include svg-size-mobile;
+  }
 }
 
 #bowl-of-noodles {
@@ -297,6 +329,10 @@ $stroke-length:110;
 #slide-14-svg {
   @include svg-size-desktop;
   animation: scaleText 3s ease infinite alternate;
+
+  @media only screen and (max-width: 520px) {
+    @include svg-size-mobile;
+  }
 }
 
 @keyframes scaleText {
