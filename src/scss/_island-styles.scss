@@ -1,0 +1,76 @@
+@mixin hover-color {
+  fill: $jpn-red;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+@mixin change-fill($var) {
+  fill: $var;
+} 
+
+#kitakata-section:hover {
+  fill: #000;
+  cursor: pointer;
+}
+
+#sapporo-name:hover {
+  @include hover-color;
+}
+
+#kitakata-name:hover {
+  @include hover-color;
+}
+
+#tokyo-name:hover {
+  @include hover-color;
+}
+
+#hakata-name:hover {
+  @include hover-color;
+}
+
+#sapporo-section {
+  @include change-fill(#f2ccd5);
+
+  &:hover {
+    @include hover-color;
+  }
+}
+
+#kitakata-section {
+  @include change-fill(#e499ab);
+
+  &:hover {
+    @include hover-color;
+  }
+}
+
+#tokyo-section {
+  @include change-fill(#d76681);
+
+  &:hover {
+    @include hover-color;
+  }
+}
+
+#hakata-section-main > * {
+  @include change-fill(#c93357);
+
+  &:hover {
+    @include hover-color;
+  }
+}
+
+
+
+
+.title-line-animation {
+  stroke-dasharray: 40;
+  animation: dash 10s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
